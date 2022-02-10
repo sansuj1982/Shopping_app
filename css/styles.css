@@ -118,6 +118,8 @@
 @media only screen and (max-width:990px){.product-grid7{margin-bottom:30px}
 }
 
+
+
 /*.header{
     background-image: url('https://www.fcinq.com/v3/wp-content/uploads/home.jpg');
     background-repeat: no-repeat;
@@ -267,9 +269,9 @@
     
     footer{
         margin-top:800px;
-    }/
+    }*/
 
-    body {
+.body {
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-size: 1rem;
@@ -290,11 +292,11 @@
     padding: 5px;
 }
 
-/*
-headeer top
-*/
+
+ /*headeer top*/
+
 .topbar{
-    background-color: #45ccc5;
+    background-color: #2b2729;
     padding: 0;
   }
   
@@ -339,10 +341,11 @@ headeer top
   .topbar ul.info i {
       color: #131313;
       font-style: normal;
-      margin-right: 8px;
+      margin-right: 8px;      
       display: inline-block;
       position: relative;
       top: 4px;
+      
   }
   
   .topbar ul.info li {
@@ -354,7 +357,7 @@ headeer top
   }
   
   .topbar ul.info i span {
-      color: #aaa;
+      color: #aaa; 
       font-size: 13px;
       font-weight: 400;
       line-height: 50px;
@@ -396,7 +399,7 @@ headeer top
   }
   
   .waves-effect {
-      position: relative;
+      position: relative; 
       cursor: pointer;
       display: inline-block;
       overflow: hidden;
@@ -418,6 +421,7 @@ headeer top
   
   li {
       list-style-type: none;
+      
   }
   .bg-image-full {
       background-position: center center;
@@ -426,15 +430,48 @@ headeer top
       -moz-background-size: cover;
       background-size: cover;
       -o-background-size: cover;
+      
   }
   .bg-dark {
       background-color: #222!important;
   }
   
   .mx-background-top-linear {
-      background: -webkit-linear-gradient(45deg, #ebc5df 48%, #1b1e21 48%);
-      background: -webkit-linear-gradient(left, #e4c4e0 48%, #1b1e21 48%);
-      background: linear-gradient(45deg, #e9bddf 48%, #1b1e21 48%);
+      background: -webkit-linear-gradient(45deg, rgb(245, 193, 226) 48%, #1b1e21 48%);
+      background: -webkit-linear-gradient(left, rgb(245, 193, 226) 48%, #1b1e21 48%);
+      background: linear-gradient(45deg, rgb(245, 193, 226) 48%, #1b1e21 48%);
   }
-  
+
+
+  .copyrights{
+    margin-top:25px;
+    }
     
+    footer.container-fluid.text-center.foot {
+        background: #f7eff6;
+    }
+    
+    .dark-line{
+    border-top: 1px solid #e0bfde;
+    }
+    
+    .white-txt{
+    color: rgb(230, 16, 201);
+    }
+    
+    
+    a.link {
+        color: hsl(322, 28%, 68%);
+        border: 1px hsl(323, 33%, 69%) solid;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    a.link:hover {
+    background: hsl(323, 100%, 40%);
+        color: #383838;
+    }
+    
+    .footimg{
+    width: 5rem;
+    }
