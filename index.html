@@ -13,7 +13,7 @@
     <!--CSS styles-->
     <link rel="stylesheet" href="/css/styles.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
@@ -42,45 +42,29 @@
             </header>
             <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
               <div class="container">
-                <img class="footimg" style=" float: left; " src="/css/Screen Shot 2022-02-10 at 10.39.17 pm.png" alt="Logo">
-                <a class="navbar-brand" rel="nofollow" href="#" style="color: rgb(97, 6, 89);">PinkBag.Com</a>   
+                
+                <a class="navbar-brand" rel="nofollow" href="#" style="color: rgb(97, 6, 89); font-size: 30px; font-family: cursive; font-weight: bold;">PinkBag.Com</a>   
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-          
-                  <ul class="navbar-nav ml-auto">
-          
-                    <li class="nav-item active">
-                      <a class="nav-link" href="https://nusasatu.com">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-          
-                   <li class="nav-item">
-                      <a class="nav-link" href="#">Sale</a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Shopping Cart</a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Shopping Bag</a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                    </li>
-          
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a href="#" id="notification"><i class="fa fa-bell" style="color:palevioletred;"></i></a> 
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a id="cart"class="fa fa-shopping-cart" href="#" style="color:palevioletred;"></a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="#" id="account"><i class="fa fa-user-circle-o" style="color:palevioletred;"></i></a>
+                        </li>
+      
+                        <li class="nav-item">
+                          <a href="#" id="bars"><i class="fa fa-bars" style="color:palevioletred;"></i></a>
+                        </li>
+                      </ul> 
                 </div>
               </div>
             </nav>
@@ -92,31 +76,34 @@
         <br>
         <br>
         <br>
-        
-        <marquee class="GeneratedMarquee" direction="right" scrollamount="5" behavior="scroll"><img src="http://clipart-library.com/clip-art/hearts-transparent-background-24.htm" alt="">💕Valentine’s Day Special Sale💕</marquee>
+    
+        <marquee class="GeneratedMarquee" direction="right" scrollamount="5" behavior="scroll">💕Valentine’s Day Special Sale💕</marquee>
         <br>
         <br>
+        <main id="main"></main>
         <div class="container">
         
         <div class="row">
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="0">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.08.36 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.08.47 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.08.36 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.08.47 pm.png" id="card-img">
                         </a>
                         
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
-                            <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>  
+                            
+                            <li><a href="/pic1.html" class="fa fa-shopping-bag"></a></li>
+                            <li><a href="/pic1.html" class="fa fa-shopping-cart" id="add-to-cart"></a></li>  
                         </ul>
                         
                         <span class="product-new-label">New</span>
                     </div>
+                    
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Sequin Shift Dress</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Sequin Shift Dress</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -124,28 +111,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$150.00
+                        <div class="price" id="item-price">$150.00
                             <span>$200.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="1">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.06.49 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.07.06 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.06.49 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.07.06 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label" style="background-color:firebrick">Sale</span>                    
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Summer Lite</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Summer Lite</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -153,26 +142,28 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$75.00</div>
+                        <div class="price" id="item-price">$75.00</div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="2">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.04.33 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.05.07 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.04.33 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.05.07 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Bridal Infinity</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Bridal Infinity</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -180,28 +171,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$300.00
+                        <div class="price" id="item-price">$300.00
                             <span>$350.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="3">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 3.17.56 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 3.18.13 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 3.17.56 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 3.18.13 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                           
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Lolita Dress</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Lolita Dress</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -209,31 +202,33 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul> 
-                        <div class="price">$180.00
+                        <div class="price" id="item-price">$180.00
                             <span>$200.00</span>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="4">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.17.06 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.17.15 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.17.06 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.17.15 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Vintage Glam</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Vintage Glam</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -241,28 +236,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$130.00
+                        <div class="price" id="item-price">$130.00
                             <span>$150.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="5">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.16.14 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.16.07 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.16.14 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.16.07 pm.png" id="card-img"> 
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                          
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label" style="background-color:firebrick">Sale</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Summer Beach</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Summer Beach</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -270,26 +267,28 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$75.00</div>
+                        <div class="price" id="item-price">$75.00</div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="6">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.13.17 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.13.31 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.13.17 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.13.31 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                           
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Pink Blazer</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Pink Blazer</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -297,28 +296,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$95.00
+                        <div class="price" id="item-price">$95.00
                             <span>$120.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="7">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.12.39 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.12.52 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.12.39 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.12.52 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Women's Blazer</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Women's Blazer</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -327,31 +328,33 @@
                             <li class="fa fa-star"></li>
                         </ul>
                          
-                        <div class="price">$115.00
+                        <div class="price" id="item-price">$115.00
                             <span>$200.00</span>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="8">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.09.33 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.09.43 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.09.33 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.09.43 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                           
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Butterfly Sleeve</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Butterfly Sleeve</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -359,28 +362,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$175.00
+                        <div class="price" id="item-price">$175.00
                             <span>$250.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="9">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.19.07 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.19.17 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.19.07 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.19.17 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label" style="background-color:firebrick">Sale</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">LuLu Dress</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">LuLu Dress</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -388,26 +393,28 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul>
-                        <div class="price">$115.00</div>
+                        <div class="price" id="item-price">$115.00</div>
                     </div>
+                </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="10">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.15.45 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.15.51 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.15.45 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.15.51 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                            
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Pink Ruffles Dress</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Pink Ruffles Dress</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -415,28 +422,30 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul> 
-                        <div class="price">$175.00
+                        <div class="price" id="item-price">$175.00
                             <span>$200.00</span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="col-md-3 col-sm-6">
+                <div class="item-container" id="11">
                 <div class="product-grid7">
                     <div class="product-image7">
                         <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.16.34 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.16.42 pm.png">
+                            <img class="pic-1" src="/css/Screen Shot 2022-02-09 at 10.16.34 pm.png" id="card-img">
+                            <img class="pic-2" src="/css/Screen Shot 2022-02-09 at 10.16.42 pm.png" id="card-img">
                         </a>
                         <ul class="social">
-                            <li><a href="" class="fa fa-search"></a></li>
+                           
                             <li><a href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a href="" class="fa fa-shopping-cart"></a></li>
+                            <li><a href="" class="fa fa-shopping-cart" id="add-to-cart"></a></li>
                         </ul>
                         <span class="product-new-label">New</span>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Diane Dress</a></h3>
+                        <h3 class="title"><a href="#" id="item-name">Diane Dress</a></h3>
                         <ul class="rating">
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
@@ -444,16 +453,87 @@
                             <li class="fa fa-star"></li>
                             <li class="fa fa-star"></li>
                         </ul> 
-                        <div class="price">$175.00
+                        <div class="price" id="item-price">$175.00
                             <span>$250.00</span>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
         </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+</main>
+        <!-- details page section -->
+            <div id="details-page">
+                <div class="details">
+                    <div class="items-detail">
+                        <div class="image-container">
+                            <img src="/css/Screen Shot 2022-02-10 at 2.08.36 pm.png" alt="" id="details-img">
+                        </div>
+                        <div class="details-card">
+                            <h2 id="detail-title">Sequin Shift Dress</h2>
+                            <h4 id="detail-price">Price : $150.00</h4>
+                            <p id="you-save">You save : ($50.00)</p>
+                            <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+                            <p id="spec"><strong>Specification :</strong>
+
+                                <ul>
+                                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
+
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime reiciendis laborum! Velit odit molestias architecto doloremque est sapiente. </li>
+                                </ul>
+                            </p>
+                            <button id="carts">Add to Cart</button>
+                            <button id="buy">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of page detail -->
+
+
+            <!-- cart list section -->
+            <div id="cart-container">
+                <p id="cart-title">Your Cart</p id="cart-title">
+                <div id="empty-cart">
+                    <h1>Your Cart is Empty...</h1>
+                </div>
+
+                <div id="cart-with-items">
+                    <div class="cart-column">
+                        <h3>Product</h3>
+                        <h3>Product Name</h3>
+                        <h3>Total </h3>
+                        <h3>Quantity</h3>
+                        <h3>Remove</h3>
+                    </div>
+                    <div id="item-body">
+                    </div>
+                    <div id="total">
+                        <h3 id="total-items"></h3>
+                        <h2 id="total-amount"></h2>
+                        <h3 id="you-saved"></h3>
+                    </div>
+                </div>
+            </div>
+        <footer class="container-fluid text-center foot">
+
+            <div class="copyrights">
+                <p class="Black-txt">PinkBag.com © 2022
+                    <br><br>
+                    <img class="footimg" src="/css/Screen Shot 2022-02-10 at 10.39.17 pm.png" alt="Logo">
+                </p>
+                <hr class="dark-line">
+                <a class="link" href="#">Contact Us</a>&nbsp
+                <a class="link" href="#">Privacy Policy</a>&nbsp
+                <a class="link" href="#">Terms & Conditions</a>
+                <br><br>
+                
+            </div>
+            </footer>
+
+<!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -464,25 +544,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     <script src="/javascript/index.js"></script>
-    <script src="/javascript/nav.js"></script>
+   
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>   
-  </body>
-  <footer class="container-fluid text-center foot">
-
-    <div class="copyrights">
-        <p class="Black-txt">PinkBag.com © 2022
-            <br><br>
-            <img class="footimg" src="/css/Screen Shot 2022-02-10 at 10.39.17 pm.png" alt="Logo">
-        </p>
-        <hr class="dark-line">
-        <a class="link" href="#">Contact Us</a>&nbsp
-        <a class="link" href="#">Privacy Policy</a>&nbsp
-        <a class="link" href="#">Terms & Conditions</a>
-        <br><br>
-        
-    </div>
-</footer>
   
+</body> 
 </html>

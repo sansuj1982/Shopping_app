@@ -3,60 +3,164 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/styles.css">
-    <!-- Bootstrap CSS-->
-    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    < Include the above in your HEAD tag ---------->
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!CSS styles-->
-    <!--<link rel="stylesheet" href="/css/styles.css">
+    <!--CSS styles-->
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <!<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
-    <!--link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <title>Pink Bag!</title>
+    <title>PinkBag!</title>
   </head>
   <body>
-    <div class="container">
+    <div>
+      <div class="fixed-top">
+          <header class="topbar">
+              <div class="container">
+                <div class="row">
+                  <!-- social icon-->
+                  <div class="col-sm-12">
+                    <ul class="social-network">
+                      <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
+                      <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
         
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid7">
-                    <div class="product-image7">
-                        <a href="#">
-                            <img class="pic-1" src="/css/Screen Shot 2022-02-10 at 2.08.36 pm.png">
-                            <img class="pic-2" src="/css/Screen Shot 2022-02-10 at 2.08.47 pm.png">
-                        </a>
-                        
-                        <ul class="social">
-                            <li><a id="searchButton" href="" class="fa fa-search"></a></li>
-                            <li><a id="bagButton" href="" class="fa fa-shopping-bag"></a></li>
-                            <li><a id="cartButton" href="" class="fa fa-shopping-cart"></a></li>  
-                        </ul>
-                        
-                        <span class="product-new-label">New</span>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Sequin Shift Dress</a></h3>
-                        <ul class="rating">
-                            <li class="fa fa-star"></li>
-                            <li class="fa fa-star"></li>
-                            <li class="fa fa-star"></li>
-                            <li class="fa fa-star"></li>
-                            <li class="fa fa-star"></li>
-                        </ul>
-                        <div class="price">$150.00
-                            <span>$200.00</span>
-                        </div>
-                    </div>
                 </div>
+              </div>
+          </header>
+          <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+            <div class="container">
+              
+              <a class="navbar-brand" rel="nofollow" href="#" style="color: rgb(97, 6, 89); font-family: cursive;">PinkBag.Com</a>   
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="access" id="navbarResponsive">
+        
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="#" id="notification"><i class="fa fa-bell" style="color:palevioletred;"></i></a> 
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a id="cart"class="fa fa-shopping-cart" href="#" style="color:palevioletred;"></a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" id="account"><i class="fa fa-user-circle-o" style="color:palevioletred;"></i></a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" id="bars"><i class="fa fa-bars" style="color:palevioletred;"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-    <script>src="click1.js"</script>
-    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->   
+          </nav>
+        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                      <div class="product-grid7">
+                          <div class="product-image">
+                              <a href="#">
+                                  <img class="demo-pic" style="max-width: 30em; height: 10%; position:relative;" src="/css/Screen Shot 2022-02-10 at 2.08.36 pm.png">
+                                  
+                                  
+                              </a>                           
+                              <!--<ul class="social">
+                                  <li><a id="searchButton" class="fa fa-search"></a></li>
+                                  <li><a id="bagButton" class="fa fa-shopping-bag"></a></li>
+                                  <li><a id="cartButton" class="fa fa-shopping-cart"></a></li>  
+                              </ul>-->
+                              <span class="product-new-label">New</span>
+                           </div>
+                          
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="product-brand" style="font-family: cursive; color:palevioletred;">Sequin Shift Dress</h2>
+                   <br>
+                   <br>
+                   <h6 style="color:palevioletred;">Description:</h6>
+                   <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                   <br>
+                   <br>
+                   <h6 style="color:palevioletred;">Price:</h6>
+                   <span class="product-price">$99</span>
+                   <span class="product-actual-price">$200</span>
+                   <span class="product-discount">( 50% off )</span>
+                   <p class="product-sub-heading" style="color:palevioletred;"><h6 style="color:palevioletred;">select size:</h6></p>
+                   <input type="radio" name="size" value="s" checked hidden id="s-size">
+                   <label for="s-size" class="size-radio-btn check">s</label>
+                   <input type="radio" name="size" value="m" hidden id="m-size">
+                   <label for="m-size" class="size-radio-btn">m</label>
+                   <input type="radio" name="size" value="l" hidden id="l-size">
+                   <label for="l-size" class="size-radio-btn">l</label>
+                   <input type="radio" name="size" value="xl" hidden id="xl-size">
+                   <label for="xl-size" class="size-radio-btn">xl</label>
+                   <br>
+                   <br>
+                   
+                   <div class="wish-button">
+                   <button class="btn cart-btn">add to wishlist</button>
+                   <button class="btn cart-btn" id="buy-now">Buy It Now</button>
+                   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+  <footer class="container-fluid text-center foot">
+    
+    <div class="copyrights">
+        <p class="Black-txt">PinkBag.com © 2022
+            <br><br>
+            <img class="footimg" src="/css/Screen Shot 2022-02-10 at 10.39.17 pm.png" alt="Logo">
+        </p>
+        <hr class="dark-line">
+        <a class="link" href="#">Contact Us</a>&nbsp
+        <a class="link" href="#">Privacy Policy</a>&nbsp
+        <a class="link" href="#">Terms & Conditions</a>
+        <br><br>
+        
+    </div>
+</footer>
+  
+  
 </html>

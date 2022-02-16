@@ -71,90 +71,53 @@ const data= [
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
-    {
-        id : 8,
-        img : '/css/Screen Shot 2022-02-10 at 2.09.33 pm.png',
-        name : 'Butterfly Sleeve',
-        price : 175,
-        save : 75,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 9,
-        img : '/css/Screen Shot 2022-02-09 at 10.19.07 pm.png',
-        name : 'LuLu Dress',
-        price : 115,
-        save : 85,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 10,
-        img : '/css/Screen Shot 2022-02-09 at 10.15.45 pm.png',
-        name : 'Pink Ruffles Dress',
-        price : 175,
-        save : 25,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 11,
-        img : '/css/Screen Shot 2022-02-09 at 10.16.34 pm.png',
-        name : 'Diane Dress',
-        price : 175,
-        save : 50,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
 ];
 
 let cartList=[]; //array to store cart lists
 
-const i = "";
-const detail =document.getElementsByClassName('card-item');
-const detailsImg = document.getElementById('details-img')
-const detailTitle = document.getElementById('detail-title')
-const detailPrice = document.getElementById('detail-price')
-const youSave = document.getElementById('you-save');
-const detailsPage = document.getElementById('details-page');
-const back = document.getElementById('buy')
+var i;
+var detail =document.getElementsByClassName('card-item');
+var detailsImg = document.getElementById('details-img')
+var detailTitle = document.getElementById('detail-title')
+var detailPrice = document.getElementById('detail-price')
+var youSave = document.getElementById('you-save');
+var detailsPage = document.getElementById('details-page');
+var back = document.getElementById('buy')
 back.addEventListener('click',refreshPage)
-const addToCarts = document.querySelectorAll('#add-to-cart')
-const cart = document.getElementById('cart');
+var addToCarts = document.querySelectorAll('#add-to-cart')
+var cart = document.getElementById('cart');
 
 // click event to display cart page
 cart.addEventListener('click',displayCart)
 
-const carts = document.getElementById('carts');
+var carts = document.getElementById('carts');
 
 //click events to add items to cart from details page
 carts.addEventListener('click',()=>addToCart(getId))
 
-//let home = document.getElementById('logo');
+var home = document.getElementById('logo');
 
 //click event to hide cart page and return to home page
-//home.addEventListener('click',hideCart);
+// home.addEventListener('click',hideCart);
 
 //events on dynamically created element to remove items from list
 document.addEventListener('click',function (e){
     if(e.target.id=='remove'){
-        const itemId = e.target.parentNode.id
+        var itemId = e.target.parentNode.id
         removeFromCart(itemId)
     }
 })
 
-//click event to display details page
-//for( let i=0; i<data.length;i++){
-    //detail[i].addEventListener('click',handleDetail)
-//}
 
-let getId = "";
+//click event to display details page
+// for(i=0;i<data.length;i++){
+//     detail[i].addEventListener('click',handleDetail)
+// }
+
+var getId;
 
 //click events to add items to cart from home page cart icon
 addToCarts.forEach(val=>val.addEventListener('click',()=>addToCart(val.parentNode.id)));
-
-
 
 // details function
 function handleDetail(e){
@@ -172,11 +135,11 @@ function addToCart(id) {
         cartList= [...cartList,data[id]];
         addItem()
         
-        alert('item added to your cart')
+        alert('Item added to your cart')
 
     }
     else{
-        alert('your item is already there')
+        alert('Your item is already there')
     }
     data[id].itemInCart= true
 }
@@ -208,50 +171,50 @@ function displayCart(){
     }
 }
 
-const totalAmount =" ";
-const totalItems =" ";
-const totalSaving =" ";
+var totalAmount;
+var totalItems;
+var totalSaving;
 
 //add item to the cart
 function addItem(){
     totalAmount=0;
     totalItems = 0;
     totalSaving=0
-    const clrNode=document.getElementById('item-body');
+    var clrNode=document.getElementById('item-body');
         clrNode.innerHTML= '';
         console.log(clrNode.childNodes)
         cartList.map((cart)=>
         {
-            let cartCont = document.getElementById('item-body');
+            var cartCont = document.getElementById('item-body');
             totalAmount = totalAmount + cart.price;
             totalSaving = totalSaving + cart.save;
             totalItems = totalItems + 1;
 
-            let tempCart = document.createElement('div')
+            var tempCart = document.createElement('div')
             tempCart.setAttribute('class','cart-list');
             tempCart.setAttribute('id',cart.id);
 
-            let listImg = document.createElement('img');
+            var listImg = document.createElement('img');
             listImg.setAttribute('id','list-img');
             listImg.src = cart.img
             tempCart.appendChild(listImg)
 
-            let listName = document.createElement('h3');
+            var listName = document.createElement('h3');
             listName.setAttribute('class','list-name');
             listName.innerHTML = cart.name;
             tempCart.appendChild(listName)
 
-            let listPay = document.createElement('h3');
+            var listPay = document.createElement('h3');
             listPay.setAttribute('class','pay');
             listPay.innerHTML = cart.price;
             tempCart.appendChild(listPay);
 
-            let listQuantity = document.createElement('h3');
+            var listQuantity = document.createElement('h3');
             listQuantity.setAttribute('class','quantity');
             listQuantity.innerHTML = '1';
             tempCart.appendChild(listQuantity);
 
-            let listTrash = document.createElement('i');
+            var listTrash = document.createElement('i');
             listTrash.setAttribute('class','fa fa-trash ');
             listTrash.setAttribute('id','remove');
             tempCart.appendChild(listTrash);

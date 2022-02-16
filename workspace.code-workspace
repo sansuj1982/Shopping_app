@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../New final project sprint 2/Task 7 sprint 2/Final-GroupProject"
+		},
+		{
+			"path": "../../Javascript assessment/quizz app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Shopping_app"
+	}
+}
